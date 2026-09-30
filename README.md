@@ -16,8 +16,6 @@ Cliente gRPC desenvolvido para consolidar os conteúdos das aulas da pós-gradua
   
 * ☕️ Java 21
   
-* 🗄️ PostgreSQL
-
 * 🟢 Spring Boot 4.1.0
   
 <br> 

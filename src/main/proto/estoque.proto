@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package estoque;
+
+option java_multiple_files = true;
+option java_package = "br.com.grpc.client.model.proto.estoque";
+
+service EstoqueService {
+  rpc ConsultarEstoque (ConsultarEstoqueRequest) returns (ConsultarEstoqueResponse);
+}
+
+message ConsultarEstoqueRequest {
+  int32 id_produto = 1;
+}
+
+message ConsultarEstoqueResponse {
+  int32 id_produto = 1;
+  string descricao = 2;
+  int32 quantidade = 3;
+  bool disponivel = 4;
+}
